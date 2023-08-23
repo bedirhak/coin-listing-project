@@ -1,0 +1,9 @@
+.banner-element {    
+    width: calc((100% - 120px) / 3);
+    background-color: green;
+    border: 1px solid white;
+}
+
+.banner-element:first-of-type {
+    order: 3;
+}

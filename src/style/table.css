@@ -1,0 +1,54 @@
+.each-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    color: var(--thema-color);
+    width: calc((100% - 120px) / 3);
+    border: 1px solid var(--thema-color);
+    transition: all 500ms ease-in;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.each-table:hover {
+    transition: all 500ms ease-in;
+    -webkit-box-shadow: 0px 0px 0px 15px var(--thema-color);
+    box-shadow: 0px 0px 15px var(--thema-color);
+}
+
+.table-headings, .table-data {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.each-table th {
+    color: var(--thema-color);
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.table-data a {
+    width: 100%;
+    display: flex;
+    color: unset;
+}
+
+.each-table tr, .each-table th {
+    background-color: var(--slider-dark-gray);
+    border-radius: 100px;
+}
+
+.each-table tr:hover {
+    -webkit-box-shadow: 0px 0px 0px 15px var(--thema-color);
+    box-shadow: 0px 0px 5px var(--thema-color);
+}
+
+.table-data td, .table-headings td {
+    width: 33%;
+    overflow: hidden;
+}
